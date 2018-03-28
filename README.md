@@ -1,0 +1,2 @@
+# GithubImagePace
+我的获取GitHub图片绝对路径用于Markdown文档图片的浏览器插件
