@@ -139,7 +139,7 @@ chrome.tabs.onActiveChanged.addListener(function () {
               }
               url = url.replace(/blob/,"raw");
               if(format) {
-              url = "!["+url.substring(url.lastIndexOf('/')+1,url.lastIndexOf('.'))+"]("+url+")";//https://github.com/smilelight/images/raw/master/wxapp_component/Image1.png
+              url = "!["+decodeURI(url.substring(url.lastIndexOf('/')+1,url.lastIndexOf('.')))+"]("+url+")";//https://github.com/smilelight/images/raw/master/wxapp_component/Image1.png
               }
               //![https://github.com/smilelight/images/raw/master/wxapp_component/Image1.png](https://github.com/smilelight/images/raw/master/wxapp_component/Image1.png)
               //url = "https://github.com"+rul;
